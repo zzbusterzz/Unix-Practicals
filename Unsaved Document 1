@@ -1,0 +1,3 @@
+read -p "Enter three file names" file1 file2 file3
+
+

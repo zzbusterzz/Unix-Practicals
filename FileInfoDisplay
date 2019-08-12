@@ -1,0 +1,9 @@
+echo "Enter file name in current directory"
+read fileName
+
+if [ -f $fileName ];
+	then
+		
+	else
+		echo "File doesn't exist"		
+fi

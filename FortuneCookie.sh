@@ -1,15 +1,3 @@
-message1="Fortun1"
-message2="Fortun2"
-message3="Fortun3"
-message4="Fortun4"
-message5="Fortun5"
-message6="Fortun6"
-message7="Fortun7"
-message8="Fortun8"
-message9="Fortun9"
-message10="Fortun10"
-
-pickedNo= shuf -i 1-10 -n 1
-echo $pickedNo
-pickedNo="message"${pickedNo}
-echo "$pickedNo"
+fortuneArray=("Fortune1" "Fortune2" "Fortune3" "Fortune4" "Fortune5" "Fortune6" "Fortune7" "Fortune8" "Fortune9" "Fortune10")
+pickedNo=$[ $RANDOM % 10 ]
+echo ${fortuneArray[$pickedNo]}

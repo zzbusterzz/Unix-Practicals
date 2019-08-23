@@ -19,6 +19,18 @@ else
 
     while IFS= read -r line
     do
-        $((lineCount
+	   isEvenNo=$( expr $lineCount % 2 )
+	   
+	   ((lineCount++))
+	   
+	   if [ "$isEvenNo" -eq 0 ];
+	   then
+			echo $line >> evenLines.txt
+		else
+			echo $line >> oddLines.txt
+		fi
+		
+		
+	   
     done < "$filename"
 fi
